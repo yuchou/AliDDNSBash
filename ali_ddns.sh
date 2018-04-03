@@ -267,8 +267,11 @@ update_record()
 
 main()
 {
-	##describe_record
-	##update_record
+	if [ "$1" = "getid" ]; then
+		describe_record
+	else
+		update_record
+	fi
 }
 
-main
+main $1
