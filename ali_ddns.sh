@@ -267,8 +267,8 @@ update_record()
 
 main()
 {
-	#describe_record
-	update_record
+	##describe_record
+	##update_record
 }
 
 main
