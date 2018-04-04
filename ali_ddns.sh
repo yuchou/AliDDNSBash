@@ -224,7 +224,7 @@ send_request()
 	local req_url="${ALiServerAddr}/?${packed_params}"
 	_debug Request addr: ${req_url}
 
-	local respond=$(curl -3 ${req_url} --silent --connect-timeout 10 -w "HttpCode:%{http_code}")
+	local respond=$(curl -3 ${req_url} --silent --connect-timeout 10 -w "HttpCode:%{http_code}" -o /tmp/result.json)
 	echo ${respond}
 }
 
